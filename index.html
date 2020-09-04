@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  <title>BMI Calculator</title>
+</head>
+<body>
+   <header>
+      <div class="container">
+        <nav >
+          <a href="#" class="logo">BMI</a>
+          <h2>Body Mass Index Cal.</h2>
+        </nav>
+        <button class="lM">Dark Mode</button>
+      </div>
+   </header>
+
+   <!-- reuslt -->
+   <main class="main-body">
+     <div class="container">
+       <div class="main-content">
+         <div class="result">
+           <h3 class="result-main">Body Mass Index in Kg/m2 = 23333</h3>
+           <p class="result-status">You are Obese</p>
+         </div>
+         <!-- //calcwtion -->
+         <div class="calculation">
+          <form action="#">
+            <div class="input-field">
+              <label for="height"><strong>Height:</strong></label>
+              <input type="number" required placeholder="enter a height" class="form-control" name="height" id="height">
+            </div>
+            <div class="input-field">
+              <label for="weight"><strong>Weight:</strong></label>
+              <input type="number" required placeholder="enter a weight" class="form-control" name="weight" id="weight">
+            </div>
+            <input type="reset" class="btn" value="Reset">
+          </form>
+         </div>
+       </div>
+     </div>
+   </main>
+
+
+   <footer class="main-footer">
+     <div class="container">
+      Mgbeojikwe Stephen &copy; 2020
+     </div>
+   </footer>
+   <script src="app.js"></script>
+</body>
+</html>
