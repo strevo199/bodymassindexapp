@@ -1,58 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-  <title>BMI Calculator</title>
-</head>
-<body>
-   <header>
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <header>
       <div class="container">
-        <nav >
+        <nav>
           <a href="#" class="logo">BMI</a>
           <h2>Body Mass Index Cal.</h2>
         </nav>
         <button class="lM">Dark Mode</button>
       </div>
-   </header>
+    </header>
 
-   <!-- reuslt -->
-   <main class="main-body">
-     <div class="container">
-       <div class="main-content">
-         <div class="result">
-           <h3 class="result-main">Body Mass Index = <span class="result-value"></span></h3>
-           <p class="result-status"></p>
-         </div>
-         <!-- //calcwtion -->
-         <div class="calculation">
-          <form class="myFrom" action="#">
-            <div class="input-field">
-              <label for="height"><strong>Height in (m):</strong></label>
-              <input type="text" placeholder="enter a height" class="form-control" name="height" id="height">
-            </div>
-            <div class="input-field">
-              <label for="weight"><strong>Weight in (Kg):</strong></label>
-              <input type="text" placeholder="enter a weight" class="form-control" name="weight" id="weight">
-            </div>
-            <input type="submit" class="btn" value="Calculate">
-          </form>
-         </div>
-       </div>
-     </div>
-   </main>
+    <!-- reuslt -->
+    <main class="main-body">
+      <div class="container">
+        <div class="main-content">
+          <div class="result">
+            <h3 class="result-main">
+              Body Mass Index = <span class="result-value"></span>
+            </h3>
+            <p class="result-status"></p>
+          </div>
+          <!-- //calcwtion -->
+          <div class="calculation">
+            <form class="myFrom" action="#">
+              <div class="input-field">
+                <label for="height"
+                  ><strong
+                    >Height 
+                    <select class="selectUnit">
+                      <option  value="meter">m</option>
+                      <option value="feet">ft</option>
+                    </select>
+                  </strong></label
+                >
+                <input
+                  type="text"
+                  placeholder="enter a height"
+                  class="form-control"
+                  name="height"
+                  id="height"
+                />
+              </div>
+              <div class="input-field">
+                <label for="weight"><strong>Weight in (Kg):</strong></label>
+                <input
+                  type="text"
+                  placeholder="enter a weight"
+                  class="form-control"
+                  name="weight"
+                  id="weight"
+                />
+              </div>
+              <input type="submit" class="btn" value="Calculate" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
 
-
-   <footer class="main-footer">
-     <div class="container">
-      Mgbeojikwe Stephen &copy; 2020
-     </div>
-   </footer>
-   <script src="app.js"></script>
-</body>
+    <footer class="main-footer">
+      <div class="container">Mgbeojikwe Stephen &copy; 2020</div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
 </html>

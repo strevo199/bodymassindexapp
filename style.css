@@ -114,6 +114,25 @@ header button.dark{
     text-shadow: 1px 1px  #000, 0.5px 0.5px  #fff;
   }
 
+  .selectUnit {
+    color: #8a0808;
+    font-weight: bold;
+    border: 1.2px #8a0808 solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+    background-color: rgb(223, 217, 217);
+    font-size: 15px;
+    text-shadow: 1px -1px 1px #ffffff96, 1px 1px 1px #000;
+}
+.selectUnit:hover{
+  background: #444;
+  color: rgba(255, 255, 255, 0.719);
+}
+
   form{
     margin: 1rem 0;
   }
@@ -138,10 +157,15 @@ label{
   color: #8a0808;
   border-radius: 5px;
   padding: 9px 10px;
+
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+.input-field:nth-child(1) > label{
+  margin-right: 0.4rem;
+  padding-right: 22px;
 }
 
 .btn{
@@ -243,7 +267,7 @@ label{
 @media(max-width:500px){
   nav h2{
     font-size: 1.5rem;
-    margin-top: 10vh;
+    margin-top: 9vh;
   }
   .main-content{
     padding: 1rem 1rem 0 1rem;
