@@ -26,21 +26,21 @@
      <div class="container">
        <div class="main-content">
          <div class="result">
-           <h3 class="result-main">Body Mass Index in Kg/m2 = 23333</h3>
-           <p class="result-status">You are Obese</p>
+           <h3 class="result-main">Body Mass Index = <span class="result-value"></span></h3>
+           <p class="result-status"></p>
          </div>
          <!-- //calcwtion -->
          <div class="calculation">
-          <form action="#">
+          <form class="myFrom" action="#">
             <div class="input-field">
-              <label for="height"><strong>Height:</strong></label>
-              <input type="number" required placeholder="enter a height" class="form-control" name="height" id="height">
+              <label for="height"><strong>Height in (m):</strong></label>
+              <input type="text" placeholder="enter a height" class="form-control" name="height" id="height">
             </div>
             <div class="input-field">
-              <label for="weight"><strong>Weight:</strong></label>
-              <input type="number" required placeholder="enter a weight" class="form-control" name="weight" id="weight">
+              <label for="weight"><strong>Weight in (Kg):</strong></label>
+              <input type="text" placeholder="enter a weight" class="form-control" name="weight" id="weight">
             </div>
-            <input type="reset" class="btn" value="Reset">
+            <input type="submit" class="btn" value="Calculate">
           </form>
          </div>
        </div>

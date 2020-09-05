@@ -92,7 +92,7 @@ header button.dark{
 /* //main-body */
 .main-body{
   background-color: rgba(224, 215, 215, 0.438);
-  height: calc(80vh - 90px);
+  min-height: calc(80vh - 60px);
 }
 
   .main-content{
@@ -110,6 +110,8 @@ header button.dark{
     font-weight: bold;
     color: #8a0808;
     font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px  #000, 0.5px 0.5px  #fff;
   }
 
   form{
@@ -168,7 +170,7 @@ label{
   padding-top: 0.5rem;
   color: white;
   background-color: #000;
-  line-height: 80px;
+  height: 60px;
 }
 
 /* //Dark mode */
@@ -244,9 +246,9 @@ label{
     margin-top: 10vh;
   }
   .main-content{
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     width: 100%;
-     margin-top: 2rem;
+     margin: 1rem 0;
   }
   .result .result-main{
     font-size: 1.2rem;
@@ -272,14 +274,14 @@ label{
 
   }
   nav a{
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-top: 9vh;
   letter-spacing: -0.4rem;
   }
   .main-content{
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.5rem 0.5rem 0 0.5rem;
     width: 100%;
-     margin-top: 2rem;
+     margin-top: 1rem;
   }
   .result .result-main{
     font-size: 0.8rem;
@@ -297,8 +299,40 @@ label{
     font-size: 1rem;
   }
   header .lM{
-    padding: 5px 6px;
-    margin-top: -3rem;
+    padding: 3px 2px;
+    margin-top: -1.7rem;
     right: 5vw;
+    font-size: 0.6rem;
 }
+}
+
+@media(max-width:250px){
+  .main-footer{
+    font-size: 0.6rem;
+  }
+  nav h2{
+    font-size: 1rem;
+    margin-top: 2vh;
+
+  }
+  .result .result-main{
+    font-size: 0.6rem;
+    text-align: left;
+  }
+  label{
+    padding: 4px 4px;
+    font-size: 15px;
+  }
+  
+  .btn{
+    font-size: 1rem;
+    color: #8a0808;
+    margin-top: 0.3rem;
+    padding: 5px;
+    width: 100%;
+    }
+    .input-field .form-control{
+      margin-top: 0.5rem;
+      width: 90%;
+    }
 }
